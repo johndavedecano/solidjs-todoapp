@@ -1,0 +1,60 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #a0a8b8;
+  height: 500px;
+  width: 400px;
+  overflow-y: auto;
+}
+
+.input {
+  padding: 10px;
+  border-bottom: solid 1px #a0a8b8;
+}
+
+.input input {
+  flex-grow: 1;
+  height: 35px;
+  font-size: 16px;
+  border-color: #a0a8b8;
+  border-width: 1px;
+  border-style: solid;
+  font-weight: bold;
+}
+
+.input input:focus {
+  outline: solid 2px #0c54e6;
+}
+
+.inputWrapper {
+  display: flex;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  min-height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: solid 1px #a0a8b8;
+  cursor: pointer;
+  user-select: none;
+}
+
+.todoItem:hover {
+  background-color: #fdfdfd25;
+}
+
+.todoItem:last-child {
+  border-bottom: none;
+}
